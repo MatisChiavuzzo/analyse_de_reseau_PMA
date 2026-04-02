@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #eef2f7;
+}
+
+/* TITRE */
+.top-header {
+    text-align: center;
+    padding: 25px 10px;
+    background: white;
+}
+
+.top-header h1 {
+    margin: 0;
+    color: #2A7FFF;
+}
+
+
+/* BLOCS */
+.bloc {
+    background: white;
+    margin: 60px auto;
+    padding: 40px;
+    width: 85%;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.mapframe {
+    width: 100%;
+    height: 600px;
+    border-radius: 15px;
+    border: none;
+}
+
+/* CONTENEUR FLEX */
+.text-carte {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* TEXTE */
+.texte {
+    flex: 1 1 300px;  
+}
+
+/* CARTE */
+.carte-container {
+    flex: 1 1 500px;  
+}
+
+/* CARTE IFRAME */
+.mapframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+
+@media screen and (max-width: 900px) {
+    .text-carte {
+        flex-direction: column;
+    }
+}
+
+.text-carte {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.texte {
+    flex: 1 1 300px;
+}
+
+.carte-container {
+    flex: 1 1 500px;
+}
+
+.mapframe {
+    width: 100%;
+    height: 30rem;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+@media screen and (max-width: 900px) {
+    .text-carte {
+        flex-direction: column;  
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* FOOTER */
+footer {
+    background: #C1272D;
+    color: white;
+    text-align: left;
+    font-size: 0.7rem;
+    padding: 3px;
+    
+}
+
+footer p{margin-left: 1rem;}
+
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* ==================== Blocs de projets filtrés ==================== */
+/* Carte individuelle d’un projet */
+.bloc-pdf {
+    background: white;             /* fond blanc */
+    border-radius: 12px;           /* coins arrondis */
+    padding: 30px;                 /* espace interne */
+    margin-bottom: 4%;             /* espace entre les blocs */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* ombre */
+    transition: all 0.3s;          /* animation fluide */
+}
+
+/* Titres des projets */
+.bloc-pdf h2 {
+    font-size: 1.2rem;             /* taille du sous-titre */
+    color: #C1272D;                /* couleur orange */
+}
+
+/* ==================== Wrapper texte / PDF ==================== */
+/* Conteneur flex pour aligner texte et PDF */
+.conteneur {
+    display: flex;                 /* mise en page flex */
+    gap: 50px;                     /* espace entre texte et PDF */
+    align-items: flex-start;       /* alignement en haut */
+}
+
+/* Bloc texte */
+.texte_pdf {
+    flex: 1;                       /* occupe la moitié de l’espace */
+    margin-top: 2rem;
+}
+
+/* Bloc PDF */
+.pdf-viewer {
+    flex: 1;                       /* occupe l’autre moitié */
+}
+
+/* iframe affichant le PDF */
+.pdf-viewer iframe {
+    width: 100%;                   /* largeur maximale */
+    max-width: auto;               /* largeur non limitée */
+    height: 600px;                 /* hauteur fixe */
+    border: 1px solid #ccc;        /* bordure grise */
+}

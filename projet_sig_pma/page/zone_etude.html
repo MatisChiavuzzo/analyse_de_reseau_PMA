@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projet SIG - Présentation de la zone d'étude</title>
+    <link rel="stylesheet" href="../css/mise_en_page_css.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+<!-- Image Bandeau -->
+    <img id="bandeau" src="../image/bandeau.png" height="100%">
+
+        <nav>
+            <ul>
+                <!-- Lien vers la page d'accueil -->
+                <li><a href="../index.html"><b><i>Accueil</i></b></a>
+                </li>
+
+                <!-- Lien vers la page d'accueil -->
+                <li><a href="#I">Présentation de la zone d'étude</a>
+                    <ul>
+                        <li><a href="#I_A">Le territoire de Pays Montbéliard Agglomération</a></li>
+                        <li><a href="#I_B">Histoire du transport en commun sur le territoire</a></li>
+                        <li><a href="#I_C">Le réseau de transport en commun évolitY</a></li>
+                    </ul>
+                </li>
+
+                <!-- Lien vers enseignants et étudiants -->
+                <li><a href="../page/indicateurs_methode.html">Indicateurs d'accessibilité et méthodologie</a>
+                    <ul>
+                        <li><a href="../page/indicateurs_methode.html#II_A">Les indicateurs</a></li>
+                        <li><a href="../page/indicateurs_methode.html#II_B">Création d'un indicateurs global d'accessibilité</a></li>
+                    </ul>
+                </li>
+
+                <!-- Lien vers enseignants et étudiants -->
+                <li><a href="../page/analyse_resultat.html">Analyse des résultats</a>
+                    <ul>
+                        <li><a href="../page/analyse_resultat.html#IV_A">Cartographie de l'indicateur global</a></li>
+                        <li><a href="../page/analyse_resultat.html#IV_B">Carte chaleur à 10 minutesa pied depuis les arrêts de bus</a></li>
+                    </ul>
+                </li>
+
+                <!-- Lien vers enseignants et étudiants -->
+                <li><a href="../page/propositions_recommandations.html">Propositions et recommandations</a>
+                    <ul>
+                        <li><a href="../page/propositions_recommandations.html#V_A">Ajout d’une nouvelle ligne et de nouveaux arrêts (Hérimoncourt la Chapotte
+                                – Audincourt les Cantons)</a></li>
+                        <li><a href="../page/propositions_recommandations.html#V_B">Prolongation d’une ligne et ajout d’arrêts (Montbéliard Gare – Allenjoie
+                                Moulin du Bois | Ligne Z)</a></li>
+                        <li><a href="../page/propositions_recommandations.html#V_C">Déviation et extension d’une ligne et ajout d’arrêts (Bavans Bel Air –
+                                Etupes/Taillecourt La Montagne/Souvenir | Ligne A)</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    <!-- ================= PARTIE I ================= -->
+    <div class="PARTIEI">
+        <section id="I">
+        </section>
+
+        <section class="bloc carte" id="I_A">
+            <div class="text-carte">
+
+                <!-- Texte à gauche -->
+                <div class="texte">
+                    <h2>Le territoire du Pays de Montbéliard Agglomération</h2>
+                    <p>La communauté d’agglomération du Pays de Montbéliard Agglomération (PMA) est située à l’est du
+                        département du Doubs (25), en région Bourgogne-Franche-Comté (cf. annexe 1 - Le territoire du
+                        Pays
+                        de Montbéliard Agglomération (PMA)). Créée en 1959, elle regroupe aujourd’hui 73 communes sur un
+                        territoire d’environ 451 km².<br>
+                        Le territoire présente un caractère à la fois urbain et rural : près d’un tiers de sa superficie
+                        est
+                        agricole et 45 communes comptent moins de 1 000 habitants. La population totale s’élève à
+                        environ
+                        139 200 habitants en 2019 (INSEE), soit une densité moyenne d’environ 308 habitants par
+                        km².<br><br>
+
+                        L’organisation territoriale est structurée autour de trois pôles urbains principaux :
+                        Montbéliard,
+                        Audincourt et Valentigney, qui concentrent population, services et activités.
+                        Avec environ 63 000 emplois, le Pays de Montbéliard constitue le principal pôle d’emploi de
+                        Franche-Comté, générant des mobilités quotidiennes importantes depuis les communes périphériques
+                        vers ces centres.<br>
+                        Cette structure polycentrique et la présence de nombreuses petites communes font du Pays de
+                        Montbéliard un territoire pertinent pour analyser l’accessibilité au réseau de bus et les
+                        éventuelles inégalités de desserte entre espaces urbains centraux et périphériques.
+                    </p>
+                </div>
+            </div>
+            <!-- Carte à droite -->
+            <div class="carte-container">
+                <iframe src="../cartes/qgis2web_leterritoirepma/" class="mapframe"></iframe>
+            </div>
+        </section>
+
+        <section class="bloc carte" id="I_B">
+            <div class="text-carte">
+
+                <!-- Texte à gauche -->
+                <div class="texte">
+                    <h2>Histoire du transport en commun sur le territoire</h2>
+                    <p> La présence d’un réseau de transport en commun sur le territoire du Pays de Montbéliard
+                        Agglomération est ancienne. C’est en 1976, sous l’impulsion des élus du District Urbain du Pays
+                        de
+                        Montbéliard (DUPM), que naît le premier réseau de transport en commun. A sa création,
+                        l’exploitation
+                        est confiée à la société VIA GTI, marquant la volonté politique d’offrir un service organisé et
+                        durable aux habitants.<br>
+                        La Compagnie des Transports du Pays de Montbéliard (CTPM) est alors créée, elle devient l’acteur
+                        central du développement du réseau.<br><br>
+
+                        Pendant près de trente ans, le réseau évolue et s’adapte aux besoins du territoire. La mise en
+                        place
+                        de services dédiés aux personnes à mobilité réduite, la création de lignes spécifiques pour
+                        desservir la base de loisirs de Brognard, ou encore par le renforcement des dessertes vers le
+                        stade
+                        Bonal, antre du FC Sochaux-Montbéliard, le réseau devient de plus en plus important. Cette
+                        période
+                        est marquée par une montée en puissance du service, accompagnant le développement urbain et
+                        économique de l’agglomération.<br><br>
+
+                        Un tournant important intervient en 2007 avec le lancement d’un nouveau réseau le 18 avril.
+                        Reposant
+                        toujours sur un axe structurant nord–sud, cette réorganisation s’articule autour de quatre
+                        grands
+                        principes : une fréquence renforcée, un niveau de correspondances maintenu, des temps de
+                        parcours
+                        améliorés et une offre stable et lisible pour les usagers. Cette modernisation traduit la
+                        volonté
+                        d’optimiser la performance du réseau tout en améliorant le confort et la qualité de service
+                        (EvolitY, 2026).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bloc carte" id="I_C">
+            <div class="text-carte">
+
+                <!-- Texte à gauche -->
+                <div class="texte">
+                    <h2>Le réseau de transport en commun ÉvolitY</h2>
+                    <p> En 2019, le réseau de la Compagnie des Transports du Pays de Montbéliard (CTPM) devient ÉvolitY.
+                        Cette nouvelle identité s’accompagne d’une réorganisation des lignes, d’un renforcement de
+                        l’accessibilité et d’une modernisation globale du service. L’exploitation est alors confiée à
+                        Moventis.<br><br>
+
+                        Aujourd’hui, le réseau ÉvolitY s’articule autour de 15 lignes régulières (cf. annexe 2 - Plan du
+                        réseau de bus ÉvolitY) fonctionnant 364 jours par an, 7 jours sur 7. Il compte plus de 650
+                        arrêts
+                        répartis sur le territoire et exploite plus de 122 véhicules. Chaque jour, environ 26 300
+                        voyageurs
+                        empruntent le réseau, soit près de 8 millions de voyageurs par an.<br>
+                        L’offre repose principalement sur 4 lignes structurantes (THNS 1, THNS 2, THNS 3 et THNS 5)
+                        circulant du lundi au samedi de 6h à 21h30 et le dimanche de 9h30 à 19h30. Elles sont complétées
+                        par
+                        7 lignes de proximité (THNS 4, lignes A, B, C, E, F et N) en service du lundi au samedi de 6h à
+                        20h30.<br>
+                        Le dimanche, 7 lignes circulent : THNS 1, THNS 2, THNS 3, THNS 4, lignes A, B et D.<br><br>
+
+                        Le réseau comprend également des lignes spécifiques répondant aux besoins du territoire : la
+                        ligne D
+                        assure la desserte de la Gare TGV de Meroux-Moval et de l’Hôpital Nord Franche-Comté ; la ligne
+                        X
+                        relie le Pays de Montbéliard au Territoire-de-Belfort ; la ligne H connecte Audincourt à
+                        Pont-de-Roide ; la ligne Z dessert la zone du Technoland depuis Montbéliard. Des renforts
+                        scolaires,
+                        ouverts à tous, permettent de desservir les RPI, collèges et lycées aux principaux horaires
+                        d’entrée
+                        et de sortie.<br><br>
+
+
+                        ÉvolitY propose des services complémentaires pour diversifier les solutions de mobilité : deux
+                        services de transport à la demande (tad’Y et TPMR – Transport de Personnes à Mobilité Réduite),
+                        quatre services de soirée (tad’Y Loisirs, flexY Foot, tad’Y Concerts pour l’Axone et le Moloco),
+                        un
+                        service de location longue durée de vélos à assistance électrique (vélitY) ainsi qu’un service
+                        de
+                        covoiturage.<br><br><br>
+
+                    </p>
+                </div>
+            </div>
+            <!-- Carte à droite -->
+            <div class="carte-container">
+                <iframe src="../cartes/qgis2web_plan_reseau/index.html" class="mapframe"></iframe>
+            </div>
+        </section>
+    </div>
+    <!-- ================= FIN PARTIE 1 ================= -->
+
+
+
+
+
+
+    <footer>
+        <p>© Matis CHIAVUZZO - Dernière mise à jour Mars 2026</p>
+    </footer>
+
+</body>
+
+</html>

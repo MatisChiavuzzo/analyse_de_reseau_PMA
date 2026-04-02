@@ -1,0 +1,1 @@
+var json_GaredeMontbliard_5 = {"type":"FeatureCollection","name":"GaredeMontbliard_5","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"fid":"1"},"geometry":{"type":"Point","coordinates":[6.801485556195834,47.510535908347265]}}]}

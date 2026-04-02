@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projet SIG - Indicateurs et méthode</title>
+    <link rel="stylesheet" href="../css/mise_en_page_css.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <!-- Image Bandeau -->
+    <img id="bandeau" src="../image/bandeau.png" height="100%">
+
+    <nav>
+        <ul>
+            <!-- Lien vers la page d'accueil -->
+            <li><a href="../index.html"><b><i>Accueil</i></b></a>
+            </li>
+
+            <!-- Lien vers la page zone étude -->
+            <li><a href="../page/zone_etude.html">Présentation de la zone d'étude</a>
+                <ul>
+                    <li><a href="./page/zone_etude.html#I_A">Le territoire de Pays Montbéliard Agglomération</a></li>
+                    <li><a href="./page/zone_etude.html#I_B">Histoire du transport en commun sur le territoire</a></li>
+                    <li><a href="./page/zone_etude.html#I_C">Le réseau de transport en commun évolitY</a></li>
+                </ul>
+            </li>
+
+            <!-- Lien vers enseignants et étudiants -->
+            <li><a href="#II">Indicateurs d'accessibilité et méthodologie</a>
+                <ul>
+                    <li><a href="#II_A">Les indicateurs</a></li>
+                    <li><a href="#II_B">Création d'un indicateurs global d'accessibilité</a></li>
+                </ul>
+            </li>
+
+            <!-- Lien vers enseignants et étudiants -->
+            <li><a href="../page/analyse_resultat.html">Analyse des résultats</a>
+                <ul>
+                    <li><a href="../page/analyse_resultat.html#IV_A">Cartographie de l'indicateur global</a></li>
+                    <li><a href="../page/analyse_resultat.html#IV_B">Carte chaleur à 10 minutesa pied depuis les arrêts
+                            de bus</a></li>
+                </ul>
+            </li>
+
+            <!-- Lien vers enseignants et étudiants -->
+            <li><a href="../page/propositions_recommandations.html">Propositions et recommandations</a>
+                <ul>
+                    <li><a href="../page/propositions_recommandations.html#V_A">Ajout d’une nouvelle ligne et de
+                            nouveaux arrêts (Hérimoncourt la Chapotte
+                            – Audincourt les Cantons)</a></li>
+                    <li><a href="../page/propositions_recommandations.html#V_B">Prolongation d’une ligne et ajout
+                            d’arrêts (Montbéliard Gare – Allenjoie
+                            Moulin du Bois | Ligne Z)</a></li>
+                    <li><a href="../page/propositions_recommandations.html#V_C">Déviation et extension d’une ligne et
+                            ajout d’arrêts (Bavans Bel Air –
+                            Etupes/Taillecourt La Montagne/Souvenir | Ligne A)</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- ================= PARTIE I ================= -->
+    <div class="PARTIEI">
+        <section id="II">
+        </section>
+
+        <section class="bloc carte" id="II_A">
+            <div class="text-carte">
+
+                <!-- Texte à gauche -->
+                <div class="texte">
+                    <h2>Variables d’accessibilité : critères de sélection et cadre d’analyse</h2>
+                    <p>
+                        Pour mener l’analyse présentée, nous avons mobilisé cinq variables, considérées comme des
+                        indicateurs clés de l’accessibilité au réseau à l’échelle communale. Selon nous, ces indicateurs
+                        sont fondamentaux pour apprécier de manière objective le niveau de desserte et la facilité
+                        d’accès au transport en commun pour les habitants.<br><br>
+
+                        Les cinq variables d’études sélectionnées pour déterminer l’accessibilité des communes au réseau
+                        sont les suivantes :
+                    <ul>
+                        <li>Le nombre de ligne(s) par commune</li>
+                        <li>Le nombre de station(s) de bus par commune</li>
+                        <li>La densité d'arrêts rapportée à la tache urbaine résidentielle</li>
+                        <li>La part de bâtiments résidentiels (par commune) située dans des isochrones de 10 minutes à
+                            pied depuis les stations de bus</li>
+                        <li>La fréquence minimale de passage d’un bus en semaine</li>
+                    </ul><br>
+
+                    Afin de mieux expliciter leur pertinence et de montrer en quoi ils constituent des témoins
+                    significatifs de l’accessibilité, nous avons synthétisé les principales informations dans le
+                    schéma ci-dessous. Celui-ci permet de visualiser les liens entre les variables retenues et la
+                    notion globale d’accessibilité au réseau.
+
+                    </p>
+                    <img src="../image/schema_indicateurs.jpg" alt="schema_indicateurs" class="center" height="500">
+                    <p>Comme le présente ce schéma, les différentes variables mobilisées sont étroitement
+                        interconnectées et influencent directement l’usage du réseau. Elles conditionnent ainsi l’accès
+                        effectif au territoire par les usagers, reflétant la manière dont la desserte et les
+                        infrastructures facilitent ou limitent la mobilité.<br><br>
+
+                        Dans cet exemple, l’individu X peut accéder en moins de 10 minutes à une seule ligne (L1), mais
+                        celle-ci bénéficie d’une fréquence de passage élevée. D’autres individus, en revanche, ont accès
+                        à deux lignes, ou à la ligne 2, qui présente une fréquence plus faible.
+                        En combinant et en analysant le profil global de chaque commune, il devient possible d’évaluer
+                        la manière dont les habitants disposent d’un accès au réseau, en tenant compte à la fois de la
+                        proximité des lignes et de leur fréquence de desserte.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bloc carte">
+            <div class="text-carte">
+
+                <!-- Texte à gauche -->
+                <div class="texte">
+                    <h2>Création des variables composantes de l’analyse</h2><br>
+                    <h3>1. L'accès au réseau par la diversité de l'offre : Le nombre de ligne(s) par commune</h3>
+                    <p> Nous considérons que le nombre de lignes passantes et effectuant au moins un arrêt dans une
+                        commune est un marqueur essentiel d’intégration et de connexion à un réseau. Cet indicateur ne
+                        mesure pas seulement une présence technique, mais reflète la connectivité de la commune vers le
+                        reste de l'agglomération par la ou les lignes. Plus le nombre de lignes est élevé, plus les
+                        destinations accessibles sans correspondance sont diversifiées, ce qui renforce ainsi l’accès au
+                        réseau global de la commune.<br><br>
+
+
+                        Afin de déterminer le nombre de lignes traversant les différentes communes du territoire, nous
+                        avons réalisé une intersection spatiale sur SIG entre la couche des lignes de bus et celle des
+                        limites communales.
+                        Cette opération a permis d’identifier, pour chaque commune, les tronçons de lignes présentes
+                        dans son périmètre. À partir de la table attributaire issue de cette intersection, un tableau
+                        croisé dynamique a ensuite été élaboré afin de comptabiliser le nombre de lignes par commune.
+
+
+                    </p>
+                    <h3>2. Le volume de l'offre : Le nombre de station(s) de bus par commune</h3>
+                    <p> Le nombre total de stations de bus situé dans le périmètre de chaque commune, est un indicateur
+                        qui constitue une mesure brute de la capacité du réseau : plus une commune dispose d'arrêts,
+                        plus le maillage spatial est théoriquement fin, et plus l’accès au réseau par les population est
+                        simple/rapide. Cette donnée est fondamentale car elle représente le premier niveau de service
+                        offert, elle indique la multiplication des points d'entrée possibles vers le réseau de
+                        transport, indépendamment de la fréquence ou de la destination.<br><br>
+
+
+                        La méthode utilisée pour le calcul de cet indicateur est semblable à celle présentée
+                        précédemment, nous avons réalisé une intersection spatiale entre la couche des arrêts de bus et
+                        celle des communes. Puis via un tableau croisé dynamique, nous avons pu comptabiliser le nombre
+                        de lignes par commune.
+                    </p>
+
+                    <h3>3. La densité d'arrêts rapportée à la tache urbaine du bâti résidentiel</h3>
+                    <p> Dans un territoire rural comme celui du Pays de Montbéliard Agglomération (PMA), un calcul de
+                        densité brut à la superficie totale serait biaisé par les zones forestières ou agricoles non
+                        habitées. Pour pallier ce biais, nous avons choisi de rapporter le nombre d’arrêts à la tache
+                        urbaine de chaque commune. En calculant le nombre d'arrêts par kilomètre carré urbanisé, nous
+                        obtenons un indicateur fidèle de la proximité réelle du service là où se concentre la
+                        population, évitant ainsi de pénaliser les communes vastes mais peu denses.<br><br>
+
+
+                        Pour la mise en place de cet indicateur, nous avons d’abord procédé à une sélection par
+                        expression au sein de la couche du bâti, afin de ne conserver que les bâtiments dont l’attribut
+                        USAGE1 correspond à un usage résidentiel. Cette étape a permis de restreindre l’analyse aux
+                        seules constructions dédiées à l’habitat.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="bloc carte" id="II_B"></section>
+        </section>
+
+        <!-- ================= FIN PARTIE 1 ================= -->
+
+        <footer>
+            <p>© Matis CHIAVUZZO - Dernière mise à jour Mars 2026</p>
+        </footer>
+
+</body>
+
+</html>
