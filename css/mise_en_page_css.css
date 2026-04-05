@@ -166,3 +166,11 @@ footer p{margin-left: 1rem;}
     height: 600px;                 /* hauteur fixe */
     border: 1px solid #ccc;        /* bordure grise */
 }
+
+
+h2 {color: #C1272D;
+margin-bottom: 3rem;}
+
+h3 {color: #C1272D;
+margin-left: 2rem;
+margin-top: 3rem;}
