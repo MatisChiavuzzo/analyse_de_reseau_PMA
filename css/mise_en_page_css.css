@@ -163,7 +163,7 @@ footer p{margin-left: 1rem;}
 .pdf-viewer iframe {
     width: 100%;                   /* largeur maximale */
     max-width: auto;               /* largeur non limitée */
-    height: 600px;                 /* hauteur fixe */
+    height: 730px;                /* hauteur fixe */
     border: 1px solid #ccc;        /* bordure grise */
 }
 
@@ -174,3 +174,21 @@ margin-bottom: 3rem;}
 h3 {color: #C1272D;
 margin-left: 2rem;
 margin-top: 3rem;}
+
+
+.images_ACP {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+}
+.images_ACP div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+p {text-indent: 2rem;
+line-height: 1.6;}

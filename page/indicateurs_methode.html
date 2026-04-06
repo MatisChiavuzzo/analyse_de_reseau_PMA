@@ -77,9 +77,9 @@
                         Pour mener l’analyse présentée, nous avons mobilisé cinq variables, considérées comme des
                         indicateurs clés de l’accessibilité au réseau à l’échelle communale. Selon nous, ces indicateurs
                         sont fondamentaux pour apprécier de manière objective le niveau de desserte et la facilité
-                        d’accès au transport en commun pour les habitants.<br><br>
+                        d’accès au transport en commun pour les habitants.</p>
 
-                        Les cinq variables d’études sélectionnées pour déterminer l’accessibilité des communes au réseau
+                    <p>Les cinq variables d’études sélectionnées pour déterminer l’accessibilité des communes au réseau
                         sont les suivantes :
                     <ul>
                         <li>Le nombre de ligne(s) par commune</li>
@@ -88,21 +88,22 @@
                         <li>La part de bâtiments résidentiels (par commune) située dans des isochrones de 10 minutes à
                             pied depuis les stations de bus</li>
                         <li>La fréquence minimale de passage d’un bus en semaine</li>
-                    </ul><br>
+                    </ul>
+                    </p>
 
-                    Afin de mieux expliciter leur pertinence et de montrer en quoi ils constituent des témoins
-                    significatifs de l’accessibilité, nous avons synthétisé les principales informations dans le
-                    schéma ci-dessous. Celui-ci permet de visualiser les liens entre les variables retenues et la
-                    notion globale d’accessibilité au réseau.
+                    <p>Afin de mieux expliciter leur pertinence et de montrer en quoi ils constituent des témoins
+                        significatifs de l’accessibilité, nous avons synthétisé les principales informations dans le
+                        schéma ci-dessous. Celui-ci permet de visualiser les liens entre les variables retenues et la
+                        notion globale d’accessibilité au réseau.
 
                     </p>
                     <img src="../image/schema_indicateurs.jpg" alt="schema_indicateurs" class="center" height="500">
                     <p>Comme le présente ce schéma, les différentes variables mobilisées sont étroitement
                         interconnectées et influencent directement l’usage du réseau. Elles conditionnent ainsi l’accès
                         effectif au territoire par les usagers, reflétant la manière dont la desserte et les
-                        infrastructures facilitent ou limitent la mobilité.<br><br>
+                        infrastructures facilitent ou limitent la mobilité.</p>
 
-                        Dans cet exemple, l’individu X peut accéder en moins de 10 minutes à une seule ligne (L1), mais
+                    <p>Dans cet exemple, l’individu X peut accéder en moins de 10 minutes à une seule ligne (L1), mais
                         celle-ci bénéficie d’une fréquence de passage élevée. D’autres individus, en revanche, ont accès
                         à deux lignes, ou à la ligne 2, qui présente une fréquence plus faible.
                         En combinant et en analysant le profil global de chaque commune, il devient possible d’évaluer
@@ -125,17 +126,15 @@
                         mesure pas seulement une présence technique, mais reflète la connectivité de la commune vers le
                         reste de l'agglomération par la ou les lignes. Plus le nombre de lignes est élevé, plus les
                         destinations accessibles sans correspondance sont diversifiées, ce qui renforce ainsi l’accès au
-                        réseau global de la commune.<br><br>
+                        réseau global de la commune.</p>
 
 
-                        Afin de déterminer le nombre de lignes traversant les différentes communes du territoire, nous
+                    <p>Afin de déterminer le nombre de lignes traversant les différentes communes du territoire, nous
                         avons réalisé une intersection spatiale sur SIG entre la couche des lignes de bus et celle des
                         limites communales.
                         Cette opération a permis d’identifier, pour chaque commune, les tronçons de lignes présentes
                         dans son périmètre. À partir de la table attributaire issue de cette intersection, un tableau
                         croisé dynamique a ensuite été élaboré afin de comptabiliser le nombre de lignes par commune.
-
-
                     </p>
                     <h3>2. Le volume de l'offre : Le nombre de station(s) de bus par commune</h3>
                     <p> Le nombre total de stations de bus situé dans le périmètre de chaque commune, est un indicateur
@@ -143,10 +142,10 @@
                         plus le maillage spatial est théoriquement fin, et plus l’accès au réseau par les population est
                         simple/rapide. Cette donnée est fondamentale car elle représente le premier niveau de service
                         offert, elle indique la multiplication des points d'entrée possibles vers le réseau de
-                        transport, indépendamment de la fréquence ou de la destination.<br><br>
+                        transport, indépendamment de la fréquence ou de la destination.</p>
 
 
-                        La méthode utilisée pour le calcul de cet indicateur est semblable à celle présentée
+                    <p>La méthode utilisée pour le calcul de cet indicateur est semblable à celle présentée
                         précédemment, nous avons réalisé une intersection spatiale entre la couche des arrêts de bus et
                         celle des communes. Puis via un tableau croisé dynamique, nous avons pu comptabiliser le nombre
                         de lignes par commune.
@@ -158,26 +157,26 @@
                         habitées. Pour pallier ce biais, nous avons choisi de rapporter le nombre d’arrêts à la tache
                         urbaine de chaque commune. En calculant le nombre d'arrêts par kilomètre carré urbanisé, nous
                         obtenons un indicateur fidèle de la proximité réelle du service là où se concentre la
-                        population, évitant ainsi de pénaliser les communes vastes mais peu denses.<br><br>
+                        population, évitant ainsi de pénaliser les communes vastes mais peu denses.</p>
 
 
-                        Pour la mise en place de cet indicateur, nous avons d’abord procédé à une sélection par
+                    <p>Pour la mise en place de cet indicateur, nous avons d’abord procédé à une sélection par
                         expression au sein de la couche du bâti, afin de ne conserver que les bâtiments dont l’attribut
                         USAGE1 correspond à un usage résidentiel. Cette étape a permis de restreindre l’analyse aux
-                        seules constructions dédiées à l’habitat.<br><br>
+                        seules constructions dédiées à l’habitat.</p>
 
 
-                        À partir de cette sélection, nous avons pu calculer la tache urbaine résidentielle pour chacune
+                    <p>À partir de cette sélection, nous avons pu calculer la tache urbaine résidentielle pour chacune
                         des communes du territoire. La méthode repose sur la création d’une première zone tampon de 100
                         mètres autour des bâtiments sélectionnés. Les polygones obtenus ont ensuite été fusionnés afin
                         de former une tache continue. Dans un second temps, une zone tampon négative de –90 mètres a été
                         appliquée à cette enveloppe. Ce procédé permet d’obtenir une tache urbaine résidentielle
                         consolidée avec un seuil de continuité de 10 mètres. Enfin, un traitement complémentaire a été
                         réalisé afin d’isoler les polygones discontinus et d’en calculer la surface, permettant ainsi
-                        d’analyser précisément la répartition spatiale de l’urbanisation résidentielle.<br><br>
+                        d’analyser précisément la répartition spatiale de l’urbanisation résidentielle.</p>
 
 
-                        Enfin, nous avons réalisé une intersection spatiale entre cette couche et celle des communes,
+                    <p>Enfin, nous avons réalisé une intersection spatiale entre cette couche et celle des communes,
                         puis via un tableau croisé dynamique, nous avons pu calculer la surface totale de la tache
                         urbaine résidentielle dans chacune des communes.
                     </p>
@@ -198,26 +197,26 @@
                         géographie
                         urbaine comme la distance maximale acceptable pour qu'un usager intègre le transport en commun
                         dans
-                        son quotidien sans que cela soit perçu comme une contrainte majeure. » <br><br>
+                        son quotidien sans que cela soit perçu comme une contrainte majeure. »</p>
 
-                        Ainsi, nous pouvons calculer
+                    <p>Ainsi, nous pouvons calculer
                         la zone couverte depuis une station de bus en 10 minutes à pied, par le réseau viaire. Cette
                         méthode
                         permet de quantifier l'efficacité de captation de la zone en dénombrant le nombre de bâtiments
                         situés à l'intérieur de ces périmètres. Cet indicateur est crucial : il permet de vérifier si le
                         réseau "capte" réellement le bâti existant ou s'il se contente de traverser le territoire sans
-                        desservir les zones résidentielles. <br><br>
+                        desservir les zones résidentielles.</p>
 
-                        Cet indicateur a été construit sur la base du calcul d’isochrone
+                    <p>Cet indicateur a été construit sur la base du calcul d’isochrone
                         de 10 minutes à pied depuis les arrêts de bus du réseau. Pour le calcul des isochrones, nous
                         avons
                         utilisé l’extension QGIS isochrone_ng, qui se base sur le réseau de la BDTopo-Valhalla. Cette
-                        extension est développée par l’IGN.<br><br>
+                        extension est développée par l’IGN.</p>
 
-                        A partir de cette couche et celle des bâtiments résidentiels, nous avons pu réaliser une
-                        intersection spatiale, afin d’identifier le nombre de bâtiments dans ces zones.<br><br>
+                    <p>A partir de cette couche et celle des bâtiments résidentiels, nous avons pu réaliser une
+                        intersection spatiale, afin d’identifier le nombre de bâtiments dans ces zones.</p>
 
-                        Comme pour les autres indicateurs, à partir de cette couche, nous avons réalisé une intersection
+                    <p>Comme pour les autres indicateurs, à partir de cette couche, nous avons réalisé une intersection
                         spatiale avec la couche des communes, afin d’avoir une valeur à l’échelle communale.
                     </p>
 
@@ -229,9 +228,9 @@
                         communes bénéficiant de plusieurs lignes, nous avons retenu l'intervalle de passage le plus
                         court. Ce choix méthodologique permet d'identifier le "meilleur niveau de service" offert à
                         l'habitant, considérant que l'usager privilégiera naturellement la ligne la plus performante
-                        pour ses déplacements quotidiens, si possible. <br><br>
+                        pour ses déplacements quotidiens, si possible. </p>
 
-                        Afin d’obtenir cette information pour chacune des
+                    <p>Afin d’obtenir cette information pour chacune des
                         communes, nous avons directement extrait l’information sur le site internet du réseau évolitY,
                         par la consultation des horaires. La fréquence de passage utilisée dans cette analyse est celle
                         des horaires du lundi au samedi.
@@ -255,9 +254,9 @@
                     différentes variables qui le compose. Pour cela nous avons mis en place une ACP. En effet, l’analyse
                     en composantes principales (ACP) est une méthode statistique appartenant à la famille des analyses
                     multivariées, permettant de synthétiser les relations entre plusieurs variables différentes
-                    (Géoconfluences, 2023). <br><br>
+                    (Géoconfluences, 2023).</p>
 
-                    Toutefois, en l’état, les variables étant brutes, la comparaison des
+                <p>Toutefois, en l’état, les variables étant brutes, la comparaison des
                     indicateurs ne serait pas possible. Au vu de valeurs extrêmes, de communes à morphologies
                     différentes, ou encore étant exprimées par des unités non comparables, nous devons palier à ces
                     limites. Pour cela, nous avons pondéré chacune des variables / indicateurs. Cette méthode permet de
@@ -265,33 +264,36 @@
                     fort). Ainsi, l’ACP sera effectuée sur les variables pondérées. Chacune des variables a été pondérée
                     de la manières suivante :
                 </p>
-                <img src="../image/Formule de pondération des variables.png" alt="schema_indicateurs" class="center" height="400"><br><br>
+                <img src="../image/Formule de pondération des variables.png" alt="schema_indicateurs" class="center"
+                    height="400"><br><br>
 
 
                 <h3>2. Résultats de l’ACP</h3>
                 <p>L’analyse montre que les deux premiers axes expliquent 68 % de la variance totale des données (41,9 %
                     pour l’axe 1 et 26,1 % pour l’axe 2). Cette proportion relativement élevée permet une interprétation
-                    pertinente de la structure des données dans le plan factoriel.<br><br>
+                    pertinente de la structure des données dans le plan factoriel.</p><br>
 
-                    L’axe 1 est corrélé positivement avec
+                <p>L’axe 1 est corrélé positivement avec
                     les variables nombre de lignes, nombre d’arrêts et fréquence de passage minimale, ce qui traduit un
                     niveau d’offre de transport plus élevé. Les communes situées à droite du plan factoriel, comme
                     Montbéliard, Audincourt ou Valentigney, se caractérisent par une meilleure desserte en transports en
-                    commun.<br>
-                    L’axe 2 oppose la densité d’arrêts rapportée à la surface de la tache urbaine résidentielle
+                    commun.</p>
+                <p>L’axe 2 oppose la densité d’arrêts rapportée à la surface de la tache urbaine résidentielle
                     (nombre d’arrêts par km²) à la part de bâtiments résidentiels. Cet axe semble traduire une
-                    différence entre densité de desserte et structure fonctionnelle du territoire. <br><br>
+                    différence entre densité de desserte et structure fonctionnelle du territoire.</p><br>
 
-                    La représentation des
+                <p>La représentation des
                     individus met en évidence une opposition entre les communes centrales ou bien desservies et les
                     communes périphériques. Certaines communes, comme Montbéliard, apparaissent nettement isolées sur
                     l’axe 1, ce qui confirme leur rôle de pôle majeur dans l’organisation du réseau de transport. À
                     l’inverse, plusieurs communes se regroupent autour de l’origine du graphique, indiquant des
                     caractéristiques intermédiaires ou relativement similaires en matière d’offre de transport.
                 </p>
-                
-                <img src="../image/cercledescorrelations.png" alt="schema_indicateurs" class="center" height="500"><br><br>
-                <img src="../image/nuagedesindividus.png" alt="schema_indicateurs" class="center" height="500"><br><br>
+
+                <div class="images_ACP">
+                    <img src="../image/cercledescorrelations.png" alt="schema_indicateurs" class="center" height="500">
+                    <img src="../image/nuagedesindividus.png" alt="schema_indicateurs" class="center" height="500">
+                </div>
 
                 <p>L’ACP met en évidence une structure entre les indicateurs, les deux premiers axes expliquant 68 % de
                     la variance totale. Cette part de variance étant significative, l’indicateur global peut être
@@ -302,7 +304,8 @@
                     sera appliqué (soit sa contribution dans l’explication). L’indicateur global se calcul selon cette
                     formule : </p>
 
-                <img src="../image/Formule de l'indice d'accessibilité.png" alt="schema_indicateurs" class="center" height="400"><br><br>
+                <img src="../image/Formule de l'indice d'accessibilité.png" alt="schema_indicateurs" class="center"
+                    height="400"><br><br>
             </div>
         </section>
 
