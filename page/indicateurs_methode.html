@@ -241,6 +241,18 @@
         </section>
 
 
+        <section class="bloc carte">
+            <div class="text-carte">
+
+                <!-- Texte à gauche -->
+                <div class="texte">
+                    <h2>Indicateur complémentaire : Estimation du nombre d’individus par bâtiment</h2>
+                    <p>Nous aurions également pu prendre en compte la population estimée par habitant comme indicateur d’analyse. Cependant, les données disponibles reposent sur des méthodes d’estimation qui s’appuient sur des informations parfois incomplètes ou approximatives. De plus, les ajustements (ou redressements) réalisés par l’INSEE peuvent introduire une incertitude dans les chiffres obtenus. Par conséquent, ces données ne constituent pas une base suffisamment fiable et solide pour être intégrées à l’analyse, notamment lorsqu’il s’agit de les comparer avec d’autres indicateurs plus précis et mieux établis. Toutefois, nous pouvons utiliser cette donnée en complément de l’indicateur final, afin d’estimer le nombre d’individus hors des isochrones de 10 minutes à pied depuis les arrêts de bus. </p>
+                    <p>La démarche employée vise à affiner la distribution de la population, initialement disponible à l'échelle d'un carreau de 200 mètres, pour l'estimer à l'échelle du bâtiment individuel.  Dans un premier temps, nous réalisons une intersection spatiale afin d'associer chaque bâtiment au carreau correspondant. Cette opération permet d'identifier l'appartenance géographique de chaque bâti et d'y intégrer les attributs du carroyage. </p>
+                    <p>Ensuite, nous calculons d'abord la surface habitable de chaque entité en multipliant son  nombre d'étages par son emprise au sol. Puis, on procède ensuite à l’addition de ces surfaces à l'intérieur de chaque carreau pour déterminer la capacité d'accueil totale de l'unité statistique de référence. Enfin, la population du carreau est redistribuée au prorata de la surface habitable de chaque bâtiment selon la surface habitable total du carreau.  </p>
+                </div>
+            </div>
+        </section>
 
 
         <section class="bloc carte" id="II_B">
@@ -265,47 +277,96 @@
                     de la manières suivante :
                 </p>
                 <img src="../image/Formule de pondération des variables.png" alt="schema_indicateurs" class="center"
-                    height="400"><br><br>
+                    height="400">
 
 
-                <h3>2. Résultats de l’ACP</h3>
-                <p>L’analyse montre que les deux premiers axes expliquent 68 % de la variance totale des données (41,9 %
-                    pour l’axe 1 et 26,1 % pour l’axe 2). Cette proportion relativement élevée permet une interprétation
-                    pertinente de la structure des données dans le plan factoriel.</p><br>
+                <h3>2. Analyse des corrélations : entre cohérence structurelle et disparités spatiales du réseau</h3>
+                <img src="../image/matrice.png" alt="schema_indicateurs" class="center"
+                    height="300">
+                <p>La matrice de corrélation montre une relation forte et significative entre le nombre de lignes et le
+                    nombre d’arrêts (r = 0,777 ; p < 0,001). Cette association traduit un aspect central de
+                        l’accessibilité au réseau de bus. Les communes disposant d’une offre plus développée cumulent à
+                        la fois une plus grande diversité de lignes et un nombre d’arrêts plus important, ce qui
+                        renforce leur niveau de desserte. </p>
+                        <p>En revanche, le nombre d’arrêts présente des corrélations faibles et non significatives avec
+                            les autres variables, notamment avec la densité d’arrêts dans la tâche urbaine, la part du
+                            bâti accessible en 10 minutes et la fréquence minimale de passage. Cela montre que cet
+                            indicateur, pris isolément, ne suffit pas à caractériser l’accessibilité, qui dépend
+                            également de la répartition spatiale du réseau et de son niveau de service. </p>
+                        <p>La densité d’arrêts dans la tâche urbaine apparaît comme peu corrélée aux autres variables,
+                            ce qui suggère qu’elle capte une dimension spécifique de l’organisation spatiale du réseau.
+                            Elle est toutefois liée de manière négative et significative à la part du bâti accessible en
+                            10 minutes (r = -0,431 ; p = 0,020). Cette relation met en évidence une opposition entre des
+                            communes où le maillage d’arrêts est fin mais dans des espaces plus étalés, et des communes
+                            plus denses où un nombre plus limité d’arrêts permet de couvrir efficacement une plus grande
+                            part du bâti. </p>
+                        <p>Enfin, la fréquence minimale de passage présente des corrélations faibles avec l’ensemble des
+                            variables, bien qu’une relation positive (modérée) avec le nombre de lignes (r = 0,334 ; p =
+                            0,077) puisse être observée. Cela indique que la fréquence de passage minimale constitue une
+                            dimension relativement indépendante, davantage liée à la qualité du service qu’à la
+                            structure physique du réseau. </p>
+                        <p>Dans l’ensemble, cette matrice souligne que l’accessibilité au réseau de bus repose sur
+                            plusieurs dimensions complémentaires, l’intensité de la desserte (nombre de lignes et
+                            d’arrêts), la structure spatiale du réseau (densité d’arrêts) et l’efficacité de la
+                            couverture du territoire (part du bâti accessible), auxquelles s’ajoute une dimension de
+                            qualité de service matérialisée par la fréquence de passage. </p>
 
-                <p>L’axe 1 est corrélé positivement avec
-                    les variables nombre de lignes, nombre d’arrêts et fréquence de passage minimale, ce qui traduit un
-                    niveau d’offre de transport plus élevé. Les communes situées à droite du plan factoriel, comme
-                    Montbéliard, Audincourt ou Valentigney, se caractérisent par une meilleure desserte en transports en
-                    commun.</p>
-                <p>L’axe 2 oppose la densité d’arrêts rapportée à la surface de la tache urbaine résidentielle
-                    (nombre d’arrêts par km²) à la part de bâtiments résidentiels. Cet axe semble traduire une
-                    différence entre densité de desserte et structure fonctionnelle du territoire.</p><br>
 
-                <p>La représentation des
-                    individus met en évidence une opposition entre les communes centrales ou bien desservies et les
-                    communes périphériques. Certaines communes, comme Montbéliard, apparaissent nettement isolées sur
-                    l’axe 1, ce qui confirme leur rôle de pôle majeur dans l’organisation du réseau de transport. À
-                    l’inverse, plusieurs communes se regroupent autour de l’origine du graphique, indiquant des
-                    caractéristiques intermédiaires ou relativement similaires en matière d’offre de transport.
-                </p>
+                        <h3>3. Résultats de l’ACP</h3>
+                        <p>L’analyse montre que les deux premiers axes expliquent 68 % de la variance totale des données
+                            (41,9 %
+                            pour l’axe 1 et 26,1 % pour l’axe 2). Cette proportion relativement élevée permet une
+                            interprétation
+                            pertinente de la structure des données dans le plan factoriel.</p>
 
-                <div class="images_ACP">
-                    <img src="../image/cercledescorrelations.png" alt="schema_indicateurs" class="center" height="500">
-                    <img src="../image/nuagedesindividus.png" alt="schema_indicateurs" class="center" height="500">
-                </div>
+                        <p>L’axe 1 est corrélé positivement avec
+                            les variables nombre de lignes, nombre d’arrêts et fréquence de passage minimale, ce qui
+                            traduit un
+                            niveau d’offre de transport plus élevé. Les communes situées à droite du plan factoriel,
+                            comme
+                            Montbéliard, Audincourt ou Valentigney, se caractérisent par une meilleure desserte en
+                            transports en
+                            commun.</p>
+                        <p>L’axe 2 oppose la densité d’arrêts rapportée à la surface de la tache urbaine résidentielle
+                            (nombre d’arrêts par km²) à la part de bâtiments résidentiels. Cet axe semble traduire une
+                            différence entre densité de desserte et structure fonctionnelle du territoire.</p>
 
-                <p>L’ACP met en évidence une structure entre les indicateurs, les deux premiers axes expliquant 68 % de
-                    la variance totale. Cette part de variance étant significative, l’indicateur global peut être
-                    calculé à partir des coordonnées des individus sur le plan factoriel défini par les deux premières
-                    dimensions. Toutefois, dans un souci de ne pas exacerber l’influence de certaines variables et de ne
-                    pas perdre d’informations pour autant, nous avons créé cet indicateur en donnant un poids aux deux
-                    dimensions. Ce poids est défini selon la variance expliquée par la dimension à laquelle le poids
-                    sera appliqué (soit sa contribution dans l’explication). L’indicateur global se calcul selon cette
-                    formule : </p>
+                        <p>La représentation des
+                            individus met en évidence une opposition entre les communes centrales ou bien desservies et
+                            les
+                            communes périphériques. Certaines communes, comme Montbéliard, apparaissent nettement
+                            isolées sur
+                            l’axe 1, ce qui confirme leur rôle de pôle majeur dans l’organisation du réseau de
+                            transport. À
+                            l’inverse, plusieurs communes se regroupent autour de l’origine du graphique, indiquant des
+                            caractéristiques intermédiaires ou relativement similaires en matière d’offre de transport.
+                        </p>
 
-                <img src="../image/Formule de l'indice d'accessibilité.png" alt="schema_indicateurs" class="center"
-                    height="400"><br><br>
+                        <div class="images_ACP">
+                            <img src="../image/cercledescorrelations.png" alt="schema_indicateurs" class="center"
+                                height="500">
+                            <img src="../image/nuagedesindividus.png" alt="schema_indicateurs" class="center"
+                                height="500">
+                        </div>
+
+                        <p>L’ACP met en évidence une structure entre les indicateurs, les deux premiers axes expliquant
+                            68 % de
+                            la variance totale. Cette part de variance étant significative, l’indicateur global peut
+                            être
+                            calculé à partir des coordonnées des individus sur le plan factoriel défini par les deux
+                            premières
+                            dimensions. Toutefois, dans un souci de ne pas exacerber l’influence de certaines variables
+                            et de ne
+                            pas perdre d’informations pour autant, nous avons créé cet indicateur en donnant un poids
+                            aux deux
+                            dimensions. Ce poids est défini selon la variance expliquée par la dimension à laquelle le
+                            poids
+                            sera appliqué (soit sa contribution dans l’explication). L’indicateur global se calcul selon
+                            cette
+                            formule : </p>
+
+                        <img src="../image/Formule de l'indice d'accessibilité.png" alt="schema_indicateurs"
+                            class="center" height="400">
             </div>
         </section>
 

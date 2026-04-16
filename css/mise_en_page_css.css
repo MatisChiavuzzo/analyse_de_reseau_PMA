@@ -163,8 +163,9 @@ footer p{margin-left: 1rem;}
 .pdf-viewer iframe {
     width: 100%;                   /* largeur maximale */
     max-width: auto;               /* largeur non limitée */
-    height: 730px;                /* hauteur fixe */
+    height: 830px;                /* hauteur fixe */
     border: 1px solid #ccc;        /* bordure grise */
+    border-radius: 25px;
 }
 
 
@@ -192,3 +193,6 @@ margin-top: 3rem;}
 
 p {text-indent: 2rem;
 line-height: 1.6;}
+
+
+
